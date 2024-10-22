@@ -40,8 +40,11 @@ INSTALLED_APPS = [
     "crispy_forms", # new
     "crispy_bootstrap5", # new
     "accounts.apps.AccountsConfig",
-    "pages.apps.PagesConfig", 
+    "pages.apps.PagesConfig",
+    "articles.apps.ArticlesConfig", 
 ]
+
+TIME_ZONE = "America/New_York"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
