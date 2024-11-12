@@ -24,8 +24,7 @@ SECRET_KEY = 'django-insecure-hz_=id47e&@dauvb(8m*#!&6oh*$tbi7w9(jozfwe+8$-zmgp5
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -137,4 +136,10 @@ LOGOUT_REDIRECT_URL = "home" # new
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = ('erlanbebolotuulu@gmail.com')
+EMAIL_HOST_PASSWORD = ('xosbcawsjjkjzvxp')
+
